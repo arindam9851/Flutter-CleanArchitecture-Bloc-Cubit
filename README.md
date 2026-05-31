@@ -255,8 +255,23 @@ NetworkModule
 
 All registered in `injection.dart`, generated into `injection.config.dart` by `injectable_generator`.
 
+
 ---
 
+## 🏃 How to Run
+
+### First time setup
+```bash
+# Step 1 — Install dependencies
+flutter pub get
+ 
+# Step 2 — Generate code (Freezed + Injectable)
+dart run build_runner build
+dart run build_runner build --delete-conflicting-outputs
+ 
+# Step 3 — Run the app
+flutter run
+```
 ## 🔑 Key Concepts Learned
 
 1. **Clean Architecture** keeps layers independent — domain knows nothing about data or UI
